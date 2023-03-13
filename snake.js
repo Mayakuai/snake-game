@@ -11,6 +11,10 @@ var context;
 var snakeX = boxSize * 5;
 var snakeY = boxSize * 5;
 
+//Food 
+var foodX = boxSize * 10;
+var foodY = boxSize * 10;
+
 window.onload = function() {
     board = document.getElementById("board");
     board.height = rows * blockSize;
@@ -29,5 +33,7 @@ function update() {
     context.fillStyle="lime";
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
 
+    context.fillStyle="red";
+    context.fillRect(foodX, foodY, blockSize, blockSize);
 }
 
