@@ -8,12 +8,12 @@ var board;
 var context;
 
 // Snake head / start position
-var snakeX = boxSize * 5;
-var snakeY = boxSize * 5;
+var snakeX = blockSize * 5;
+var snakeY = blockSize * 5;
 
 //Food 
-var foodX = boxSize * 10;
-var foodY = boxSize * 10;
+var foodX = blockSize * 10;
+var foodY = blockSize * 10;
 
 window.onload = function() {
     board = document.getElementById("board");
@@ -23,7 +23,7 @@ window.onload = function() {
 
     update();
 
-}
+};
 
 
 function update() {
@@ -35,5 +35,5 @@ function update() {
 
     context.fillStyle="red";
     context.fillRect(foodX, foodY, blockSize, blockSize);
-}
+};
 
